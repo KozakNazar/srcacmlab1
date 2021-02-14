@@ -1,7 +1,7 @@
 //to measure time it is better to run with Linux
 /*******************************************************************************************************
 * N.Kozak // Lviv'2018 // ACM // Time Complexity(by examples of computing the Greatest Common Divisor) *
-*    file: acmlab3.c                                                                                   *
+*    file: acmlab1.cpp                                                                                 *
 ********************************************************************************************************/
 #include <stdio.h>
 #include <stdlib.h>
