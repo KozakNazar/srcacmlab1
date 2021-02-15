@@ -7,6 +7,8 @@
 #include <stdlib.h>
 #include <time.h>
 
+#define NANOSECONDS_PER_SECOND_NUMBER 1000000000
+
 #define DATA_TYPE volatile unsigned long long int 
 
 #define N1 18
@@ -68,7 +70,7 @@ int main() {
 	endTime = getCurrentTime();
 	printf("f1_GCD return %lld \r\nrun time: %dns\r\n\r\n", 
 	returnValue, 
-    (unsigned int)((endTime - startTime) * (double)(1000000000 / REPEAT_COUNT)));
+    (unsigned int)((endTime - startTime) * (double)(NANOSECONDS_PER_SECOND_NUMBER / REPEAT_COUNT)));
 
 	// f2_GCD 
 	startTime = getCurrentTime();
@@ -76,7 +78,7 @@ int main() {
 	endTime = getCurrentTime();
 	printf("f2_GCD return %lld \r\nrun time: %dns\r\n\r\n", 
 	returnValue, 
-	(unsigned int)((endTime - startTime) * (double)(1000000000 / REPEAT_COUNT)));
+	(unsigned int)((endTime - startTime) * (double)(NANOSECONDS_PER_SECOND_NUMBER / REPEAT_COUNT)));
 	
 	// f3_GCD 
 	startTime = getCurrentTime();
@@ -84,7 +86,7 @@ int main() {
 	endTime = getCurrentTime();
 	printf("f3_GCD return %lld \r\nrun time: %dns\r\n\r\n", 
 	returnValue,
-	(unsigned int)((endTime - startTime) * (double)(1000000000 / REPEAT_COUNT)));
+	(unsigned int)((endTime - startTime) * (double)(NANOSECONDS_PER_SECOND_NUMBER / REPEAT_COUNT)));
 
 	printf("Press Enter to continue . . .");
 	(void)getchar();
